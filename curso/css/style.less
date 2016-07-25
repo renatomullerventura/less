@@ -2,12 +2,35 @@
 @color_text_header: #4478ff;
 @font_size_desc_header: 14px;
 
-.title-nav{
-    font-size: @font_size_header;
+.nav-bar(@color_back:#ff5438, @color_text:#fff, @size_title:30px, @size_desc: 14px){
+    width: 100%;
+    height: 80px;
+    background-color: @color_back;
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid @color_back;
+    font-size: 16px;
+    color: @color_text;
+    font-size: @size_desc;
     h1{
-        color: @color_text_header;
+        position: relative;
+        margin-top: 14px;
+        margin-left: 20px;
+        margin-bottom: 0;
+        font-size: @size_title;
     }
     p{
-        font-size: @font_size_desc_header;
+        position: relative;
+        margin-top: 0;
+        margin-left: 30px;
     }
+}
+
+.nav1{
+    .nav-bar(#3437ff, #f3f3ff, 40px, 16px);
+}
+
+.nav2{
+    .nav-bar(#ff8b06, #1ecc30, 40px, 16px);
 }
