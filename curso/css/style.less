@@ -2,7 +2,7 @@
 @color_text_header: #4478ff;
 @font_size_desc_header: 14px;
 
-.nav-bar(@color_back:#ff5438, @color_text:#fff, @size_title:30px, @size_desc: 14px){
+.nav-bar(@color_back:#ff5438, @color_text:#fff, @size_title:30px, @size_desc: 14px) when (@size_title > @size_desc){
     width: 100%;
     height: 80px;
     background-color: @color_back;
@@ -28,9 +28,9 @@
 }
 
 .nav1{
-    .nav-bar(darken(#3437ff, 40%), #f3f3ff, 40px, 16px);
+    .nav-bar(darken(#3437ff, 40%), #f3f3ff, 40px, 18px);
 }
 
 .nav2{
-    .nav-bar(lighten(#ff8b06, 40%), #1ecc30, 40px, 16px);
+    .nav-bar(lighten(#ff8b06, 40%), #1ecc30, 40px, 15px);
 }
